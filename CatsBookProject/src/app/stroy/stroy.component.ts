@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-stroy',
@@ -7,6 +7,15 @@ import { Component } from '@angular/core';
   templateUrl: './stroy.component.html',
   styleUrl: './stroy.component.scss'
 })
-export class StroyComponent {
+export class StroyComponent implements OnInit{
+
+  @Input() text:string='';
+  @Input() img :string='';
+
+  constructor(){ }
+
+  ngOnInit(): void {
+  
+  }
 
 }
